@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE booklist [
+<!ELEMENT booklist (book+)>
+<!ELEMENT book (type, title, author, publisher, published_year, ISBN)>
+<!ELEMENT type (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT publisher (#PCDATA)>
+<!ELEMENT published_year (#PCDATA)>
+<!ELEMENT ISBN (#PCDATA)>
+<!ATTLIST publisher publishertype CDATA #REQUIRED>
+<!ATTLIST type category CDATA #IMPLIED>
+<!ATTLIST published_year year CDATA #FIXED "0000">
+
+]>
+<booklist>
+  <book>
+    <type>Fantasy Book</type>
+    <title> Harry Potter and the Prisoner of Azkaban </title>
+    <author> J. K. Rowling</author>
+    <publisher publishertype="advanced">Bloombury</publisher>
+    <published_year year="0000">1999</published_year>
+    <ISBN> 0-74754629-0 </ISBN>
+  </book>
+  <book>
+    <type>Technical Books</type>
+    <title>  Essestial XML for Web Professionals</title>
+    <author> Dan Livingston </author>
+    <publisher>Prentice Hal</publisher>
+  </book>
+</booklist>

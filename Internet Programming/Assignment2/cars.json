@@ -1,0 +1,10 @@
+[{"id":10001,"category":"SUV","availability":"Y","brand":"Honda","model":"CR-V","model_year":2022,"mileage":10001,"fuel_type":"petrol","seats":5,"price_per_day":120,"description":""},
+  {"id":10002,"category":"SUV","availability":"Y","brand":"Mazda","model":"CX-5","model_year":2013,"mileage":10002,"fuel_type":"petrol","seats":5,"price_per_day":120,"description":""},
+  {"id":10003,"category":"SUV","availability":"Y","brand":"KIA","model":"Sorento","model_year":2022,"mileage":10002,"fuel_type":"petrol","seats":5,"price_per_day":120,"description":""},
+  {"id":10004,"category":"SUV","availability":"Y","brand":"Volkswagen","model":"Tiguan","model_year":2018,"mileage":10004,"fuel_type":"petrol","seats":5,"price_per_day":120,"description":""},
+  {"id":10005,"category":"sedan","availability":"Y","brand":"Honda","model":"Civic","model_year":2017,"mileage":10005,"fuel_type":"petrol","seats":5,"price_per_day":120,"description":""},
+  {"id":10006,"category":"sedan","availability":"Y","brand":"Mercedes-Benz","model":"E300","model_year":2017,"mileage":10006,"fuel_type":"petrol","seats":5,"price_per_day":120,"description":""},
+  {"id":10007,"category":"sedan","availability":"Y","brand":"Toyota","model":"Avalon","model_year":2018,"mileage":10007,"fuel_type":"petrol","seats":5,"price_per_day":120,"description":""},
+  {"id":10008,"category":"wagon","availability":"N","brand":"Volvo","model":"V90","model_year":2018,"mileage":10008,"fuel_type":"petrol","seats":5,"price_per_day":120,"description":""},
+  {"id":10009,"category":"wagon","availability":"N","brand":"Audi","model":"A4-allroad","model_year":2021,"mileage":10009,"fuel_type":"petrol","seats":5,"price_per_day":120,"description":""},
+  {"id":10010,"category":"sedan","availability":"N","brand":"BMW","model":"740i","model_year":2017,"mileage":10010,"fuel_type":"petrol","seats":5,"price_per_day":120,"description":""}]

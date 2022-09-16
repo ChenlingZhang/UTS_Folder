@@ -1,0 +1,168 @@
+JFDML JFormDesigner: "7.0.5.1.409" Java: "11.0.14.1" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundlePackage": "Rescources.properties"
+	"i18n.bundleName": "ControllerPannel"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"title": new FormMessage( null, "this.title_3" )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "dialogPane"
+				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {comp scrollPane1::l::889:x, seq {space :::p, par l {comp label2::l:p::p, comp label1::l:p::p}, space :::p, par l:::p {comp Name::::123:x, comp ID::::123:x}, space s:::p, par l {seq l {comp label3:::p::p, space :::p, comp Gender:::p:97:p, space s:::p, comp label5:::p::p}, seq l {comp label4:::p::p, space s:::p, comp Email:::p:98:p, space s:::p, comp label6:::p::p}}, space :::p, par l:::p {comp Phone::::97:x, comp Address::::97:x}, space s:::p, par l {comp label7::l:p::p, comp label8::l:p::p}, space u:::p, par l:::p {comp ClubCard::::92:x, comp Group::::92:x}, space s:::p, comp label9:::p::p, space u:::p, comp Arrive::::90:x, space :::p}}"
+					"$verticalGroup": "par l {seq l {comp scrollPane1:::p:512:p, space u:::p, par l {comp label1:::p::p, par b {comp ID::b:p:30:p, comp label3::b:p::p, comp Gender::b:p::p, comp label5::b:p::p, comp Phone::b:p::p, comp label7::b:p::p, comp ClubCard::b:p::p, comp label9::b:p::p, comp Arrive::b:p::p}}, space u:::p, par b {comp label2::b:p::p, comp Name::b:p::p, comp label4::b:p::p, comp Email::b:p::p, comp label6::b:p::p, comp Address::b:p::p, comp label8::b:p::p, comp Group::b:p::p}, space :0:24:x}}"
+				} ) {
+					name: "contentPanel"
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane1"
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "CustomerViewPanelMouseClick", true ) )
+						add( new FormComponent( "javax.swing.JTable" ) {
+							name: "CustomerTable"
+							"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+								add( "ID" )
+								add( "Name" )
+								add( "Gender" )
+								add( "Email" )
+								add( "Phone" )
+								add( "Address" )
+								add( "ClubCard" )
+								add( "Group" )
+								add( "Arriving Time" )
+							}, new java.util.Vector {
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+							}, new java.util.Vector {
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+							}, new java.util.Vector {
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+							} )
+							"selectionMode": 1
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "CustomerTableMouseClicked", true ) )
+						} )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"text": new FormMessage( null, "label1.text_2" )
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "ID"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label2"
+						"text": new FormMessage( null, "label2.text" )
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "Name"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label3"
+						"text": new FormMessage( null, "label3.text" )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label4"
+						"text": new FormMessage( null, "label4.text" )
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "Gender"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "Email"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label5"
+						"text": new FormMessage( null, "label5.text" )
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "Phone"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label6"
+						"text": new FormMessage( null, "label6.text_2" )
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "Address"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label7"
+						"text": new FormMessage( null, "label7.text" )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label8"
+						"text": new FormMessage( null, "label8.text_2" )
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "ClubCard"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "Group"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label9"
+						"text": new FormMessage( null, "label9.text_2" )
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "Arrive"
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq t {space ::599:x, comp Show:::p:80:p, space s:::p, comp Update:::p::p, space s:::p, comp Delete:::p::p, space :p:17:p}}"
+					"$verticalGroup": "par l {seq t {space :0:0:x, par b {comp Delete::b:p::p, comp Update::b:p::p, comp Show::b:p::p}}}"
+				} ) {
+					name: "buttonBar"
+					"border": new javax.swing.border.EmptyBorder( 12, 0, 0, 0 )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "Show"
+						"text": new FormMessage( null, "Show.text" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "ViewCustomer", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "Delete"
+						"text": new FormMessage( null, "Delete.text_2" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "DeleteCustomer", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "Update"
+						"text": new FormMessage( null, "Update.text_2" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "UpdateCusomer", true ) )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "South"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 410, 70 )
+			"size": new java.awt.Dimension( 915, 710 )
+		} )
+	}
+}

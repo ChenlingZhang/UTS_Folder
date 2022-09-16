@@ -1,0 +1,91 @@
+JFDML JFormDesigner: "7.0.5.1.409" Java: "11.0.14.1" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundlePackage": "Rescources.properties"
+	"i18n.bundleName": "CustomerPannel"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {comp contentPanel:::p::p, comp buttonBar:::p::p}"
+				"$verticalGroup": "par l {seq {comp contentPanel:::p::p, space :0:0:p, comp buttonBar:::p::p}}"
+			} ) {
+				name: "dialogPane"
+				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq l {space :::p, comp scrollPane1:::p:643:p, par l {seq {space :p:69:p, par l {comp Add:::p:254:p, comp button1:::p:254:p, comp View:::p:254:p}}, seq l {space :p:81:p, par l:::p {comp Name::::223:x, comp label1:::p:51:p, comp label2::l:p::p, comp Price::l::223:x}}}, space ::87:x}}"
+					"$verticalGroup": "par l {seq l {par l {seq l {space :::p, comp scrollPane1::::633:x}, seq l {space :p:43:p, comp label1:::p::p, space s:::p, comp Name:::p::p, space :p:41:p, comp label2:::p::p, space s:::p, comp Price:::p::p, space ::301:x, comp View:::p::p, space s:::p, comp Add:::p::p, space s:::p, comp button1:::p::p}}, space :::p}}"
+				} ) {
+					name: "contentPanel"
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane1"
+						add( new FormComponent( "javax.swing.JTable" ) {
+							name: "MenuTable"
+							"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+								add( "Name" )
+								add( "Price" )
+							}, new java.util.Vector {
+								add( null )
+								add( null )
+							}, new java.util.Vector {
+								add( null )
+								add( null )
+							}, new java.util.Vector {
+								add( null )
+								add( null )
+							} )
+							"selectionMode": 1
+							"background": new java.awt.Color( 204, 204, 204, 255 )
+							"gridColor": new java.awt.Color( 204, 204, 204, 255 )
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "MenuTableMouseClicked", true ) )
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "MenuTableMouseClicked", true ) )
+						} )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "Add"
+						"text": "Add To Order"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "AddOrder", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "View"
+						"text": "View Menu"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "ViewMenu", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button1"
+						"text": "ChechOut"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "CheckOut", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"text": new FormMessage( null, "label1.text" )
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "Name"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label2"
+						"text": new FormMessage( null, "label2.text" )
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "Price"
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {space :0:979:x}"
+					"$verticalGroup": "par l {space :0:0:x}"
+				} ) {
+					name: "buttonBar"
+					"border": new javax.swing.border.EmptyBorder( 12, 0, 0, 0 )
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 1085, 735 )
+		} )
+	}
+}

@@ -1,0 +1,72 @@
+JFDML JFormDesigner: "7.0.5.1.409" Java: "11.0.14.1" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundlePackage": "Rescources.properties"
+	"i18n.bundleName": "ControllerPannel"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {comp contentPanel:::p::p, comp buttonBar:::p::p}"
+				"$verticalGroup": "par l {seq {comp contentPanel:::p::p, space :0:0:p, comp buttonBar:::p::p}}"
+			} ) {
+				name: "dialogPane"
+				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq t {space ::392:x, comp label1:::p:302:p, space :p:220:p}, seq l {space :p:217:p, par l {comp Name_Label::l:p:104:p, comp Password_Label::l:p:83:p}, space :p:251:p, par l:::p {comp username::::162:x, comp password::::162:x}, space ::180:x}}"
+					"$verticalGroup": "par l {seq l {par l {seq {space :p:15:p, comp label1:::p:46:p, space :p:41:p, comp Name_Label:::p:27:p}, seq t {space :p:99:p, comp username:::p:30:p}}, space :p:81:p, par b {comp Password_Label::b:p:25:p, comp password::b:p::p}, space ::235:x}}"
+				} ) {
+					name: "contentPanel"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"text": new FormMessage( null, "label1.text" )
+						"horizontalTextPosition": 0
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "Name_Label"
+						"text": new FormMessage( null, "Name_Label.text" )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "Password_Label"
+						"text": new FormMessage( null, "Password_Label.text" )
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "username"
+					} )
+					add( new FormComponent( "javax.swing.JPasswordField" ) {
+						name: "password"
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq l {space :p:53:p, comp EmployeeLog:::p::p, space ::215:x, comp CustomerLog:::p:126:p, space :p:169:p, comp button1:::p:121:p, space :p:100:p}}"
+					"$verticalGroup": "par l {seq t {space :0:0:x, par b {comp EmployeeLog::b:p::p, comp button1::b:p::p, comp CustomerLog::b:p::p}}}"
+				} ) {
+					name: "buttonBar"
+					"border": new javax.swing.border.EmptyBorder( 12, 0, 0, 0 )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "EmployeeLog"
+						"text": new FormMessage( null, "EmployeeLog.text" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "EmployeeLog", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "CustomerLog"
+						"text": new FormMessage( null, "CustomerLog.text" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "CustomerLog", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button1"
+						"text": new FormMessage( null, "button1.text" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "GuestLogin", true ) )
+					} )
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 225, 115 )
+			"size": new java.awt.Dimension( 940, 565 )
+		} )
+	}
+}

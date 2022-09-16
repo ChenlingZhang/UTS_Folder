@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<title>Validation Form</title>
+<style type="text/css">
+    .main { 
+        width: 450px; 
+        font:11px/20px verdana, arial, helvetica, sans-serif;
+    }
+</style>
+</head>
+<body class="main">
+<form name="form1" id="form1" method="post" action="validation_php.php" onsubmit="return validate()">
+    <table border="0">
+    <tr>
+        <td style="width:100px">
+            Username:
+            <span style="color:red">*</span>
+        </td>
+        <td style="width:150px">
+            <input type="text" id="username" name="username">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Password:
+            <span style="color:red">*</span>
+        </td>
+        <td>
+            <input type="password" id="password" name="password">
+        </td>
+    </tr>
+    <tr>
+        <td>Email:</td>
+        <td>
+            <input type="text" name="email">
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" align="center">
+            <input type="submit" value = "Submit">
+        </td>
+    </tr>
+    </table>
+</form>
+<script type="text/javascript">
+function validate()
+{
+    //get the values of username textbox
+    if (document.getElementById("username").value=="")
+    {
+        alert("Please enter your username");
+        return false;
+    }
+    if (document.getElementById("password").value=="")
+    {
+        alert("Please enter your password");
+        return false;
+    }
+    var username = document.getElementById("username").value;
+    
+    //write a code here to check if the length of username is at least 6 characters
+    //use username.length to count the characters
+    
+    //write a code here to get the value of password textbox
+    //write a code here to check if the length of password is at least 8 characters
+    return true;   
+}
+</script>
+</body>
+</html>
+

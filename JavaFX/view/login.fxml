@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.geometry.Insets?>
+<!--style="-fx-background-image: url('view/login.jpg');"-->
+<GridPane xmlns:fx="http://javafx.com/fxml/1" 
+          alignment="CENTER" hgap="5" vgap="10" styleClass="background" prefHeight="240.0" prefWidth="400.0" 
+          fx:controller="controller.LoginController">
+<!--    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints maxWidth="222.0" minWidth="222.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="38.0" minHeight="38.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="38.0" minHeight="38.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="38.0" minHeight="38.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="30.0" minHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints vgrow="SOMETIMES" />
+    </rowConstraints>-->
+
+    <Label styleClass="label-h2" text="Login" GridPane.columnSpan="2"/>
+    <Label id="label-error" styleClass="label-opac" text="Email:" GridPane.rowIndex="1"/>
+    <TextField fx:id="txtEmail" text="john.smith@uts.com"  prefHeight="22" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+    <Label alignment="TOP_CENTER" styleClass="label-opac" text="Password:" GridPane.rowIndex="2"/>
+    <TextField fx:id="txtPassword" text="user222" prefHeight="22" GridPane.columnIndex="1" GridPane.rowIndex="2"/>  
+    <Label fx:id="label_error" styleClass="label-error" text="" prefWidth="400" alignment="CENTER"  GridPane.columnSpan="2" GridPane.rowIndex="3" />
+      
+    <HBox spacing="7.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+        <Button onAction="#ok" text="OK" /> 
+        <Button onAction="#cancel" text="Cancel" />
+    </HBox>
+    <stylesheets>
+        <URL value="@tmsfx.css" />
+    </stylesheets>
+</GridPane>

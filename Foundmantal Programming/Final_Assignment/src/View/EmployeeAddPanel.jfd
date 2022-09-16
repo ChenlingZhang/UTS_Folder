@@ -1,0 +1,110 @@
+JFDML JFormDesigner: "7.0.5.1.409" Java: "11.0.14.1" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundlePackage": "Rescources.properties"
+	"i18n.bundleName": "ControllerPannel"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp dialogPane::t:::x}"
+			"$verticalGroup": "par l {comp dialogPane::t:::x}"
+		} ) {
+			name: "this"
+			"title": new FormMessage( null, "this.title_4" )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "dialogPane"
+				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq l {space :p:64:p, par l {comp label1::l:p::p, comp label14:::p::p, comp label6:::p::p, comp label9::l:p:122:p, comp label8::l:p::p, comp label11::l:p::p, comp label12::l:p::p, comp label13::l:p::p}, space ::226:x, par l:::p {comp Name::l::227:x, comp Email::l::227:x, comp Passoword::l::227:x, comp Gender::l::227:x, comp Position::l::227:x, comp Address::l::227:x, comp ID::l::227:x}, space :p:55:p}}"
+					"$verticalGroup": "par l {seq l {par l {seq {space :::p, comp label1:::p::p}, comp ID::l:p::p}, space :p:8:p, par l {comp label8:::p::p, comp Name:::p:30:p}, space u:::p, par l {comp label9:::p::p, comp Email:::p:30:p}, space u:::p, par l {comp label11:::p::p, comp Passoword:::p:30:p}, space u:::p, par l {comp label12:::p::p, comp Gender:::p:30:p}, space u:::p, par l {comp label13:::p::p, comp Position:::p:30:p}, space u:::p, par b {comp label14::b:p::p, comp Address::b:p::p}, space :p:31:p, comp label6:::p:0:p, space ::54:x}}"
+				} ) {
+					name: "contentPanel"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"text": new FormMessage( null, "label1.text" )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label6"
+						"text": new FormMessage( null, "label6.text" )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label8"
+						"text": new FormMessage( null, "label8.text" )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label9"
+						"text": new FormMessage( null, "label9.text" )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label11"
+						"text": new FormMessage( null, "label11.text" )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label12"
+						"text": new FormMessage( null, "label12.text" )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label13"
+						"text": new FormMessage( null, "label13.text" )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label14"
+						"text": new FormMessage( null, "label14.text" )
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "ID"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "Name"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "Email"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "Passoword"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "Gender"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "Position"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "Address"
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq l {space ::530:x, comp okButton2:::p::p, space :::p, comp okButton:::p:80:p}}"
+					"$verticalGroup": "par l {seq {space :p:35:p, par b {comp okButton::b:p::p, comp okButton2::b:p::p}, space :::p}}"
+				} ) {
+					name: "buttonBar"
+					"border": new javax.swing.border.EmptyBorder( 12, 0, 0, 0 )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "okButton"
+						"text": new FormMessage( null, "okButton.text_3" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "AddRest", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "okButton2"
+						"text": new FormMessage( null, "okButton2.text" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Submit", true ) )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "South"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "Title"
+					"text": new FormMessage( null, "Title.text" )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "North"
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 450, 125 )
+			"size": new java.awt.Dimension( 720, 510 )
+		} )
+	}
+}

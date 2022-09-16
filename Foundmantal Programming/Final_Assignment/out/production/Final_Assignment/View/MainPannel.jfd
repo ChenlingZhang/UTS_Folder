@@ -1,0 +1,73 @@
+JFDML JFormDesigner: "7.0.5.1.409" Java: "11.0.14.1" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundlePackage": "Rescources.properties"
+	"i18n.bundleName": "ControllerPannel"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {space :0:763:x}"
+			"$verticalGroup": "par l {space :0:430:x}"
+		} ) {
+			name: "this"
+			"title": new FormMessage( null, "this.title" )
+			menuBar: new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+				name: "menuBar1"
+				"background": new java.awt.Color( 204, 204, 204, 255 )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "StockController"
+					"text": new FormMessage( null, "StockController.text" )
+					"background": sfield java.awt.Color gray
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem1"
+						"text": new FormMessage( null, "menuItem1.text" )
+						"background": new java.awt.Color( 204, 204, 204, 255 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "ViewStock", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "Add"
+						"text": new FormMessage( null, "Add.text" )
+						"background": new java.awt.Color( 204, 204, 204, 255 )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "EmployeeController"
+					"text": new FormMessage( null, "EmployeeController.text" )
+					"background": sfield java.awt.Color gray
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "view"
+						"text": new FormMessage( null, "view.text" )
+						"background": new java.awt.Color( 204, 204, 204, 255 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Employeeview", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "add"
+						"text": new FormMessage( null, "add.text" )
+						"background": new java.awt.Color( 204, 204, 204, 255 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "add", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "CustomerController"
+					"text": new FormMessage( null, "CustomerController.text" )
+					"background": sfield java.awt.Color darkGray
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "viewC"
+						"text": new FormMessage( null, "viewC.text" )
+						"background": new java.awt.Color( 204, 204, 204, 255 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "viewCustomer", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "addC"
+						"text": new FormMessage( null, "addC.text" )
+						"background": new java.awt.Color( 204, 204, 204, 255 )
+					} )
+				} )
+			}
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 425, 160 )
+			"size": new java.awt.Dimension( 765, 475 )
+		} )
+	}
+}

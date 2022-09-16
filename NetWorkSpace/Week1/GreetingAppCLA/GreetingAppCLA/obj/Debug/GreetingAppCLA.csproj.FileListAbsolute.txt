@@ -1,0 +1,6 @@
+D:\Teaching\Spring 2018\31927 Net programming\Lectures-pptx\Week-1\Lab Work\Week-LabProgrammingQuestions\GreetingAppCLA\GreetingAppCLA\bin\Debug\GreetingAppCLA.exe.config
+D:\Teaching\Spring 2018\31927 Net programming\Lectures-pptx\Week-1\Lab Work\Week-LabProgrammingQuestions\GreetingAppCLA\GreetingAppCLA\bin\Debug\GreetingAppCLA.exe
+D:\Teaching\Spring 2018\31927 Net programming\Lectures-pptx\Week-1\Lab Work\Week-LabProgrammingQuestions\GreetingAppCLA\GreetingAppCLA\bin\Debug\GreetingAppCLA.pdb
+D:\Teaching\Spring 2018\31927 Net programming\Lectures-pptx\Week-1\Lab Work\Week-LabProgrammingQuestions\GreetingAppCLA\GreetingAppCLA\obj\Debug\GreetingAppCLA.csprojResolveAssemblyReference.cache
+D:\Teaching\Spring 2018\31927 Net programming\Lectures-pptx\Week-1\Lab Work\Week-LabProgrammingQuestions\GreetingAppCLA\GreetingAppCLA\obj\Debug\GreetingAppCLA.exe
+D:\Teaching\Spring 2018\31927 Net programming\Lectures-pptx\Week-1\Lab Work\Week-LabProgrammingQuestions\GreetingAppCLA\GreetingAppCLA\obj\Debug\GreetingAppCLA.pdb

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>
+
+<VBox alignment="center" prefHeight="620.0" prefWidth="600.0" styleClass="background" spacing="10"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TMSController">
+    <TableView fx:id="tableView" prefHeight="410">
+        <columns>
+            <TableColumn fx:id="nameColumn" prefWidth="${tableView.width/5}" text="Name" />
+            <TableColumn fx:id="tuitionColumn" prefWidth="${tableView.width/5}" text="Tuition" />
+            <TableColumn fx:id="scholarshipColumn" prefWidth="${tableView.width/5}" text="Scholarship" />
+            <TableColumn fx:id="deducionColumn" prefWidth="${tableView.width/5}" text="Deduction" />
+            <TableColumn fx:id="netFeeColumn" prefWidth="${tableView.width/5-2}" text="NetFee" />
+        </columns>
+    </TableView>
+    <Separator />
+    <GridPane styleClass="header">
+        <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="100.0" prefWidth="100.0" />
+            <ColumnConstraints />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="100.0" prefWidth="100.0" />
+        </columnConstraints>
+        <Label text="Total Tuition:" />
+        <Label text="Total NetFee:" GridPane.rowIndex="1" />
+        <Label text="Total BAS:" GridPane.rowIndex="2" />
+        <Label text="Total Scholarship:" GridPane.columnIndex="2" />
+        <Label text="Total Deduction:" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+        <Label fx:id="labelTotalTuition" styleClass="text-out" GridPane.columnIndex="1">
+            <GridPane.margin>
+                <Insets left="20.0" />
+            </GridPane.margin>
+        </Label>
+        <Label fx:id="labelTotalNetFee" styleClass="text-out" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <GridPane.margin>
+                <Insets left="20.0" />
+            </GridPane.margin>
+        </Label>
+        <Label fx:id="labelTotalBAS" styleClass="text-out" GridPane.columnIndex="1" GridPane.rowIndex="2" >
+            <GridPane.margin>
+                <Insets left="20.0" />
+            </GridPane.margin>
+        </Label>
+        <Label fx:id="labelTotalScholarship" styleClass="text-out" GridPane.columnIndex="3" >
+            <GridPane.margin>
+                <Insets left="20.0" />
+            </GridPane.margin>
+        </Label>
+        <Label fx:id="labelTotalDedution" styleClass="text-out" GridPane.columnIndex="3" GridPane.rowIndex="1" >
+            <GridPane.margin>
+                <Insets left="20.0" />
+            </GridPane.margin>
+        </Label>
+    </GridPane>
+    <Separator />
+    <Button onAction="#close" text="Close" />
+    <stylesheets>
+        <URL value="@tmsfx.css" />
+    </stylesheets>
+</VBox>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" alignment="center"
+      spacing="10" styleClass="background" prefHeight="400.0" prefWidth="600.0" 
+      fx:controller="controller.FacultyController" >
+   
+    <Label minWidth="600.0"  alignment="CENTER_LEFT" styleClass="label-h2" text="Filters" />
+    <HBox alignment="CENTER">
+        <children>
+            <Label styleClass="label-opac" text="Name:" />
+            <TextField fx:id="filterName" promptText="Filter by name" />
+            <Label styleClass="label-opac" text="Email:" />
+            <TextField fx:id="filterEmail" promptText="Filter by email"/>
+        </children>
+    </HBox>
+    <Separator/>
+    <TableView fx:id="tableView">
+        <placeholder>
+            <Label text="Students list is not loaded"/>
+        </placeholder>
+        <columns>
+            <TableColumn fx:id="nameColumn" prefWidth="${tableView.width/3}" text="Name" />
+            <TableColumn fx:id="emailColumn" prefWidth="${tableView.width/3}" text="Email" />
+            <TableColumn fx:id="phoneColumn" prefWidth="${tableView.width/3-3}" text="Phone" />
+        </columns>
+    </TableView>
+    <Separator />
+    <HBox alignment="BOTTOM_CENTER" spacing="10.0">
+        <children>
+            <Button fx:id="btnAdd" mnemonicParsing="false" text="Add" onAction="#add"  />
+            <Button fx:id="btnDelete" disable="true"  mnemonicParsing="false" text="Delete" onAction="#delete"/>
+            <Button fx:id="btnSelect" disable="true" mnemonicParsing="false" text="Select" onAction="#select"/>
+            <Button fx:id="btnSlip" disable="true" mnemonicParsing="false" text="SLIP" onAction="#slip"/>
+            <Button fx:id="btnReport" mnemonicParsing="false" text="Report" onAction="#report"/>
+            <Button fx:id="btnClose" mnemonicParsing="false" text="Close" onAction="#close"/>
+        </children>
+    </HBox>
+   
+    <stylesheets>
+        <URL value="@tmsfx.css" />
+    </stylesheets>
+</VBox>

@@ -1,0 +1,8 @@
+D:/Teaching/Spring 2018/31927 Net programming/Lectures-pptx/Week-1/Lab Work/Week-LabProgrammingQuestions/GreetingApp/GreetingApp/bin/Debug/GreetingApp.exe.config
+/Users/chenlingzhang/Desktop/UTS/NetWorkSpace/Week1/GreetingApp/GreetingApp/bin/Debug/GreetingApp.exe.config
+/Users/chenlingzhang/Desktop/UTS/NetWorkSpace/Week1/GreetingApp/GreetingApp/bin/Debug/GreetingApp.exe
+/Users/chenlingzhang/Desktop/UTS/NetWorkSpace/Week1/GreetingApp/GreetingApp/bin/Debug/GreetingApp.pdb
+/Users/chenlingzhang/Desktop/UTS/NetWorkSpace/Week1/GreetingApp/GreetingApp/obj/Debug/GreetingApp.csproj.AssemblyReference.cache
+/Users/chenlingzhang/Desktop/UTS/NetWorkSpace/Week1/GreetingApp/GreetingApp/obj/Debug/GreetingApp.csproj.CoreCompileInputs.cache
+/Users/chenlingzhang/Desktop/UTS/NetWorkSpace/Week1/GreetingApp/GreetingApp/obj/Debug/GreetingApp.exe
+/Users/chenlingzhang/Desktop/UTS/NetWorkSpace/Week1/GreetingApp/GreetingApp/obj/Debug/GreetingApp.pdb

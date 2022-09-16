@@ -1,0 +1,168 @@
+JFDML JFormDesigner: "7.0.5.1.409" Java: "11.0.14.1" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundlePackage": "Rescources.properties"
+	"i18n.bundleName": "EmployeePanelController"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {par l {seq {space :p:106:p, comp contentPanel:::p::p}, comp buttonBar:::p::p, seq l {space :::p, comp scrollPane1:::p:740:p, par l:::p {seq l {space :::p, par l:::p {comp label7:::::x, comp label1::l:p:34:p, comp label2::l:p::p, comp label3::l:p::p, comp label5::l:::x, comp label6::l:::x, comp label4::l:p::p}, space ::69:x, par l:::p {comp ID::::124:x, comp Name::::124:x, comp Type::::124:x, comp Max::l::124:x, comp Current::l::124:x, comp Stage::l::124:x, comp Min::l::124:x}}, seq l {space :p:28:p, par l:::p {comp Delete::t::191:x, comp Update::t::191:x, comp Add_Stock::t::191:x, comp View_Penishable::t::191:x, comp View_unpenishable::l::191:x, comp View_All::t::191:x, comp GoBack::::191:x}}}}}, space :0:0:x}}"
+				"$verticalGroup": "par l {seq {space :::p, par l {comp scrollPane1:::p:608:p, seq {space :p:2:p, par b {comp label1::b:p::p, comp ID::b:p::p}, space :::p, par b {comp label2::b:p::p, comp Name::b:p::p}, space :::p, par b {comp Type::b:p::p, comp label3::b:p::p}, space :::p, par b {comp Min::b:p::p, comp label4::b:p::p}, space :::p, par b {comp label5::b:p::p, comp Max::b:p::p}, space u:::p, par b {comp label6::b:p::p, comp Current::b:p::p}, space u:::p, par b {comp label7::b:p::p, comp Stage::b:p::p}, space :p:56:p, comp Delete:::p:30:p, space u:::p, comp Update:::p::p, space u:::p, comp Add_Stock:::p:30:p, space s:::p, comp View_Penishable:::p::p, space s:::p, comp View_unpenishable:::p::p, space :::p, comp View_All:::p::p, space :::p, comp GoBack:::p:28:p}}, space :p:6:p, comp contentPanel:::p::p, space :0:0:p, comp buttonBar:::p::p}}"
+			} ) {
+				name: "dialogPane"
+				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {space :0:984:x}"
+					"$verticalGroup": "par l {space :0:550:x}"
+				} ) {
+					name: "contentPanel"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq {space :904:904:p, comp okButton:::p:80:p}}"
+					"$verticalGroup": "par l {comp okButton:::p::p}"
+				} ) {
+					name: "buttonBar"
+					"border": new javax.swing.border.EmptyBorder( 12, 0, 0, 0 )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "okButton"
+						"text": new FormMessage( null, "okButton.text" )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane1"
+					add( new FormComponent( "javax.swing.JTable" ) {
+						name: "productTable"
+						"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+							add( "ID" )
+							add( "Name" )
+							add( "Type" )
+							add( "minStock" )
+							add( "maxStock" )
+							add( "CurrentStock" )
+							add( "Stage" )
+						}, new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						}, new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						}, new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						} )
+						"selectionMode": 1
+						"background": new java.awt.Color( 204, 204, 204, 255 )
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "productTableMouseClicked", true ) )
+					} )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "View_Penishable"
+					"text": new FormMessage( null, "View_Penishable.text" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "ViewPenishable", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "View_unpenishable"
+					"text": new FormMessage( null, "View_unpenishable.text" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "ViewUnpenishable", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "View_All"
+					"text": new FormMessage( null, "View_All.text" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "ViewAll", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "Add_Stock"
+					"text": new FormMessage( null, "Add_Stock.text" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "AddStock", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": new FormMessage( null, "label1.text" )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "ID"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": new FormMessage( null, "label2.text" )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "Name"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": new FormMessage( null, "label3.text" )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "Type"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": new FormMessage( null, "label4.text" )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "Min"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label5"
+					"text": new FormMessage( null, "label5.text" )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "Max"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label6"
+					"text": new FormMessage( null, "label6.text" )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "Current"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label7"
+					"text": new FormMessage( null, "label7.text" )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "Stage"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "Update"
+					"text": new FormMessage( null, "Update.text" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "UpdateProduct", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "Delete"
+					"text": new FormMessage( null, "Delete.text" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "DeleteProduct", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "GoBack"
+					"text": "Go Back"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "GoBack", true ) )
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 1050, 640 )
+		} )
+	}
+}

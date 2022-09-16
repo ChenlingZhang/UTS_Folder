@@ -1,0 +1,75 @@
+JFDML JFormDesigner: "7.0.5.4.420" Java: "11.0.14.1" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundlePackage": "Rescources.properties"
+	"i18n.bundleName": "login"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {par l {comp contentPanel:::p::p, comp buttonBar:::p:644:p, seq l {space :p:172:p, par l {comp User::l:p::p, comp pwd::l:p::p}, space :p:90:p, par l:::p {comp username::::180:x, comp password::::180:x}}}, space :::p}}"
+				"$verticalGroup": "par l {seq {comp contentPanel:::p::p, space :p:70:p, par b {comp User::b:p::p, comp username::b:p::p}, space :p:60:p, par b {comp pwd::b:p::p, comp password::b:p::p}, space ::118:x, comp buttonBar:::p::p, space :::p}}"
+			} ) {
+				name: "dialogPane"
+				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq {space :286:286:p, comp label1:::p::p}}"
+					"$verticalGroup": "par l {seq {space :5:5:p, comp label1:::p::p}}"
+				} ) {
+					name: "contentPanel"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"text": new FormMessage( null, "label1.text" )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+					"$columnSpecs": "0:1.0, 80, 80"
+					"$rowSpecs": "0"
+					"$hGap": 5
+					"$vGap": 5
+				} ) {
+					name: "buttonBar"
+					"border": new javax.swing.border.EmptyBorder( 12, 0, 0, 0 )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "okButton"
+						"text": new FormMessage( null, "okButton.text" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Login", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 1
+						"gridy": 0
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "resetButton"
+						"text": "Reset"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "reset", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 2
+						"gridy": 0
+						"hAlign": 2
+					} )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "User"
+					"text": new FormMessage( null, "User.text" )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "username"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "pwd"
+					"text": new FormMessage( null, "pwd.text" )
+				} )
+				add( new FormComponent( "javax.swing.JPasswordField" ) {
+					name: "password"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 400, 215 )
+			"size": new java.awt.Dimension( 670, 425 )
+		} )
+	}
+}
